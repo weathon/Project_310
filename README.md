@@ -102,6 +102,10 @@ system
 - added a feature allowing user to send the question to its number
 - added some animation after upload the image
 
+![image](https://user-images.githubusercontent.com/41298844/206081606-459cf1c8-ed26-4fe5-a09f-0d4111cbcb9d.png)
+![image](https://user-images.githubusercontent.com/41298844/206081622-29f1dd24-5541-4309-a929-92f1aa846e38.png)
+![image](https://user-images.githubusercontent.com/41298844/206081629-4fb462aa-d618-4df6-b230-fbee39041529.png)
+
 4. GUI
 GUI for main components is complete.
 ![GUI](https://github.com/HappieEE123/Project_310/blob/2db917711289f4691fd00371237c6f28f411eff6/imgs/image%204.PNG) 
