@@ -111,6 +111,7 @@ export default function Home() {
       Render = Matter.Render,
       Runner = Matter.Runner,
       Bodies = Matter.Bodies,
+      Composites = Matter.Composites,
       Composite = Matter.Composite;
 
     // create an engine
@@ -131,12 +132,13 @@ export default function Home() {
 
     // // create two boxes and a ground
     var items: any = []
-    for (var i: number = 0; i <= 500; i++) {
-      items.push(Bodies.rectangle(Math.random()*500, Math.random()*50, 8, 8,{frictionAir: Math.random()*3.5}));
-
+    for (var i: number = 0; i <= 120; i++) {
+      items.push(Bodies.rectangle(Math.random()*500, Math.random()*50, 10, 10,{frictionAir: Math.random()*0.05, restitution: 1}));
+      items.push(Bodies.circle(Math.random()*500, Math.random()*50, 2,{frictionAir: Math.random()*0.05, restitution: 1}));
     }
-
+    // Composites.chain(ropeC, 0.3, 0, -0.3, 0, { stiffness: 1, length: 0 });
     // // add all of the bodies to the world
+    items.push(Bodies.circle(120,1450,1000,{isStatic: true, restitution:1, fillStyle:"color:lightblue"}))
     Composite.add(engine.world, items);
 
     // run the renderer
