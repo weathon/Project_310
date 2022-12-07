@@ -229,7 +229,7 @@ export default function Home() {
             <div id="can">
 
             </div>
-            <button onClick={go}>GO</button>
+            {/* <button onClick={go}>GO</button> */}
             <form>
               <IonList>
                 {/*
